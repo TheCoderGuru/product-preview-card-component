@@ -1,0 +1,110 @@
+:root {
+  --dark-cyan: hsl(158, 36%, 37%);
+  --cream: hsl(30, 38%, 92%);
+  --very-dark-blue: hsl(212, 21%, 14%);
+  --dark-grayish-blue: hsl(228, 12%, 48%);
+  --white: hsl(0, 0%, 100%);
+  --font-fraunces: "Fraunces", sans-serif;
+  --font-montserrat: "Montserrat", sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: var(--cream);
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  width: max(44em, 54em);
+  margin: 12em auto;
+  background-color: var(--white);
+  border-radius: 0.3em;
+  gap: 2em;
+}
+
+img {
+  max-width: 100%;
+}
+
+.container__image {
+  height: 100%;
+  width: 23em;
+  border-top-left-radius: 0.3em;
+  border-bottom-left-radius: 0.3em;
+  object-fit: cover;
+}
+
+.container__content {
+  margin-block: 2em;
+}
+
+.container__smalltitle {
+  letter-spacing: 0.5em;
+  color: var(--dark-grayish-blue);
+  font-family: var(--font-montserrat);
+  text-transform: uppercase;
+}
+
+.container__title {
+  margin-block: 0.5em;
+  width: 10em;
+  font-family: var(--font-fraunces);
+}
+
+.container__description {
+  color: var(--dark-grayish-blue);
+  width: 16em;
+  line-height: 1.5em;
+  font-family: var(--font-montserrat);
+}
+
+.container__pricing {
+  display: flex;
+  text-align: center;
+  place-items: center;
+  margin-top: 2em;
+  gap: 3em;
+  margin-bottom: 3em;
+}
+
+.container__pricing--fancy {
+  color: var(--dark-cyan);
+  font-size: 2em;
+  font-family: var(--font-fraunces);
+}
+
+.container__pricing--strikethrough {
+  color: var(--dark-grayish-blue);
+  font-size: 1em;
+  text-decoration: line-through;
+  font-family: var(--font-montserrat);
+}
+
+.button-group {
+  display: flex;
+  gap: 0.7em;
+  border-radius: 0.5em;
+  background-color: var(--dark-cyan);
+  width: fit-content;
+  padding-inline: 4em;
+  padding-block: 1em;
+}
+
+.container__button {
+  color: var(--white);
+  font-family: var(--font-montserrat);
+}
+
+@media only screen and (max-width: 888px) {
+  .container {
+    flex-direction: column;
+  }
+}
