@@ -23,7 +23,7 @@ body {
 
 .container {
   display: flex;
-  width: max(44em, 54em);
+  width: max(44em, 46em);
   margin: 12em auto;
   background-color: var(--white);
   border-radius: 0.3em;
@@ -105,6 +105,18 @@ img {
 
 @media only screen and (max-width: 888px) {
   .container {
+    width: fit-content;
     flex-direction: column;
+  }
+
+  .container__image{
+    max-width: 100%;
+    border-radius: .3em;
+    height: 20em;
+    width: 23em;
+  }
+
+  .container__content{
+    margin-inline-start: 3em;
   }
 }
