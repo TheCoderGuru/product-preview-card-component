@@ -19,12 +19,14 @@
 body {
   background-color: var(--cream);
   min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .container {
   display: flex;
   width: max(44em, 46em);
-  margin: 12em auto;
   background-color: var(--white);
   border-radius: 0.3em;
   gap: 2em;
